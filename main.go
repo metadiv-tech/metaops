@@ -16,6 +16,7 @@ for Metadiv Technology's backend framework and services.`,
 func main() {
 	// Add subcommands
 	rootCmd.AddCommand(metaginCmd)
+	rootCmd.AddCommand(dockerCmd)
 
 	err := rootCmd.Execute()
 	if err != nil {
